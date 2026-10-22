@@ -6481,9 +6481,7 @@ module.exports = (function(e, t) {
             (this.axiosConfiguration = i.create({
               baseURL: "https://wakatime.com/api/v1/",
               headers: {
-                Authorization: "Basic ".concat(
-                  Buffer.from(this.apiKey).toString("base64")
-                )
+                Authorization: "Bearer ".concat(this.apiKey)
               }
             }));
         }
